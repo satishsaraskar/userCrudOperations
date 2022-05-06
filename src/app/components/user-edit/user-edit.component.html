@@ -1,0 +1,17 @@
+<div class="container mt-5 ">
+    <form   (ngSubmit)="onSubmit(userForm)" #userForm="ngForm" >
+        <div class="mb-3">
+            <label  class="form-label">First Name</label>
+            <input type="text" class="form-control" name="fname" [(ngModel)]="user.fname">
+          </div> 
+        <div class="mb-3">
+            <label  class="form-label">last Name</label>
+            <input type="text" class="form-control"  name="lname" [(ngModel)]="user.lname" >
+          </div> 
+        <div class="mb-3">
+          <label  class="form-label">Email address</label>
+          <input type="email" class="form-control"  name="email" [(ngModel)]="user.email">  
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
